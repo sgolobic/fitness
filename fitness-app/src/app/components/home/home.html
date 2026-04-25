@@ -1,0 +1,66 @@
+<div class="home-container">
+  <header class="home-header">
+    <div class="header-content">
+      <h1>Fitness Tracker</h1>
+      <button class="logout-btn" (click)="logout()">Logout</button>
+    </div>
+  </header>
+
+  <main class="home-main">
+    <div class="welcome-section">
+      <h2>Welcome to Your Fitness Journey!</h2>
+      <p>Track your workouts, monitor your progress, and achieve your fitness goals.</p>
+    </div>
+
+    <div class="dashboard-grid">
+      <div class="dashboard-card">
+        <div class="card-icon">💪</div>
+        <h3>Workouts</h3>
+        <p>Log and track your daily workouts</p>
+        <button class="card-btn">Start Workout</button>
+      </div>
+
+      <div class="dashboard-card">
+        <div class="card-icon">📊</div>
+        <h3>Progress</h3>
+        <p>View your fitness statistics and trends</p>
+        <button class="card-btn">View Stats</button>
+      </div>
+
+      <div class="dashboard-card">
+        <div class="card-icon">🎯</div>
+        <h3>Goals</h3>
+        <p>Set and track your fitness goals</p>
+        <button class="card-btn">Set Goals</button>
+      </div>
+
+      <div class="dashboard-card">
+        <div class="card-icon">🍎</div>
+        <h3>Nutrition</h3>
+        <p>Track your daily nutrition intake</p>
+        <button class="card-btn">Log Meals</button>
+      </div>
+    </div>
+
+    <div class="recent-activity">
+      <h3>Recent Activity</h3>
+      <div class="activity-list">
+        <div class="activity-item">
+          <span class="activity-type">Running</span>
+          <span class="activity-duration">30 min</span>
+          <span class="activity-date">Today</span>
+        </div>
+        <div class="activity-item">
+          <span class="activity-type">Weight Training</span>
+          <span class="activity-duration">45 min</span>
+          <span class="activity-date">Yesterday</span>
+        </div>
+        <div class="activity-item">
+          <span class="activity-type">Yoga</span>
+          <span class="activity-duration">20 min</span>
+          <span class="activity-date">2 days ago</span>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
