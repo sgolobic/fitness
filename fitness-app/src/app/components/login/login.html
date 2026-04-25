@@ -35,48 +35,8 @@
         }
       </button>
       
-      <div class="divider">
-        <span>or</span>
-      </div>
-      
-      <form (ngSubmit)="onSubmit()">
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input 
-            type="email" 
-            id="email" 
-            name="email" 
-            [(ngModel)]="email" 
-            required 
-            placeholder="@if (isMockMode) { Any email works } @else { Enter your email }"
-          />
-          @if (isMockMode) {
-            <small class="mock-hint">💡 In mock mode, any email will work</small>
-          }
-        </div>
-        
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input 
-            type="password" 
-            id="password" 
-            name="password" 
-            [(ngModel)]="password" 
-            required 
-            placeholder="@if (isMockMode) { Any password works } @else { Enter your password }"
-          />
-          @if (isMockMode) {
-            <small class="mock-hint">💡 In mock mode, any password will work</small>
-          }
-        </div>
-        
-        <button type="submit" class="login-btn" [disabled]="isLoading">
-          {{ isLoading ? 'Signing in...' : 'Sign In' }}
-        </button>
-      </form>
-      
       <div class="login-footer">
-        <p>Don't have an account? <a href="#">Sign up</a></p>
+        <p>Sign in with your Google account to get started</p>
       </div>
     </div>
   </div>

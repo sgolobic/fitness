@@ -16,48 +16,7 @@ export class AuthService {
     this.checkAuthStatus();
   }
 
-  async login(email: string, password: string): Promise<void> {
-    try {
-      // Check if mock authentication is enabled
-      if (environment.mockAuth) {
-        return this.mockLogin(email, password);
-      }
-      
-      const response = await this.http.post<any>(`${this.API_URL}/auth/login`, {
-        email,
-        password
-      }).toPromise();
-      
-      if (response?.token) {
-        this.setToken(response.token);
-        this.authState$.next(true);
-      }
-    } catch (error) {
-      throw new Error('Login failed');
-    }
-  }
-
-  private async mockLogin(email: string, password: string): Promise<void> {
-    // Simulate authentication delay
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    // Simple mock validation (accept any non-empty email/password)
-    if (!email || !password) {
-      throw new Error('Please enter both email and password');
-    }
-    
-    // Create mock JWT token
-    const mockToken = this.createMockJWT({
-      userId: 'mock-user-456',
-      email: email,
-      name: email.split('@')[0], // Use email username as name
-      exp: Math.floor(Date.now() / 1000) + (24 * 60 * 60) // 24 hours from now
-    });
-    
-    this.setToken(mockToken);
-    this.authState$.next(true);
-  }
-
+  
   async loginWithGoogle(): Promise<void> {
     try {
       // Check if mock authentication is enabled
