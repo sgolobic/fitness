@@ -1,11 +1,9 @@
 <div class="login-container">
   <div class="login-card">
     <div class="login-header">
-      <h2>Fitness Tracker</h2>
-      <p>Sign in to track your fitness journey</p>
       @if (isMockMode) {
         <div class="mock-badge">
-          🧪 Development Mode - Mock Authentication
+          🧪 [DEV] - Mock Authentication
         </div>
       }
     </div>
@@ -26,18 +24,9 @@
         </svg>
         @if (isLoading) {
           <span class="loading-text">Authenticating...</span>
-        } @else {
-          @if (isMockMode) {
-            🧪 Mock Google Login
-          } @else {
-            Continue with Google
-          }
         }
       </button>
-      
-      <div class="login-footer">
-        <p>Sign in with your Google account to get started</p>
-      </div>
+
     </div>
   </div>
 </div>

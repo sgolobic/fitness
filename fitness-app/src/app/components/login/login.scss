@@ -3,30 +3,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(150deg, #d8d3e7 0%, #221086 100%);
   padding: 20px;
 }
 
 .login-card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  background: rgba(218, 215, 215, 0);
+  border-radius: 4px;
+  border: 1px solid rgb(112, 111, 161);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   width: 100%;
   max-width: 400px;
 }
 
 .login-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: rgba(218, 215, 215, 0);
   color: white;
   padding: 40px 30px;
   text-align: center;
 
-  h2 {
-    margin: 0 0 10px 0;
-    font-size: 28px;
-    font-weight: 600;
-  }
 
   p {
     margin: 0;
@@ -35,14 +31,14 @@
   }
 
   .mock-badge {
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 20px;
+    background: rgba(137, 125, 180, 0);
+    border: 1px solid rgb(112, 111, 161);
+    border-radius: 4px;
     padding: 8px 16px;
     margin-top: 15px;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 500;
-    backdrop-filter: blur(10px);
+    font-family: 'Google Sans', sans-serif;
     display: inline-block;
   }
 }
@@ -57,9 +53,10 @@
   align-items: center;
   justify-content: center;
   gap: 12px;
-  background: white;
-  border: 2px solid #e0e0e0;
-  border-radius: 8px;
+  background: rgba(120, 100, 145, 0);
+  border: 1px solid rgb(97, 96, 160);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
   padding: 16px 20px;
   font-size: 16px;
   font-weight: 500;
@@ -69,8 +66,8 @@
   margin-bottom: 30px;
 
   &:hover {
-    background: #f8f9fa;
-    border-color: #d0d0d0;
+    background: rgba(68, 51, 131, 0.692);
+    
     transform: translateY(-1px);
   }
 
@@ -80,8 +77,8 @@
   }
 
   .google-icon {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
   }
 }
 
